@@ -21,14 +21,14 @@ function App() {
   }, [csrf]);
   return (
     <BrowserRouter>
-      <switch>
+      <Switch>
         <Route exact path="/">
           <Auth />
         </Route>
         <Route exact path="/todo">
           <Todo />
         </Route>
-      </switch>
+      </Switch>
     </BrowserRouter>
   )
 }
